@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Epilogue", sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 165px 0px;
+}
+
+.first-section {
+  display: flex;
+  justify-content: center;
+  margin-top: 67px;
+  padding: 0 165px 0px;
+  position: relative;
+}
+
+.section-left-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.heading-xl {
+  position: absolute;
+  width: 650px;
+  height: 154px;
+  top: 0; /* Position the text at the top */
+  margin-top: 103px;
+  font-size: 72px;
+  line-height: 78px;
+  letter-spacing: 1px;
+  z-index: 1; /* Ensure the text appears above other elements */
+}
+
+.text-body {
+  margin-top: 190px;
+  font-size: 18px;
+  line-height: 32px;
+  width: 350px;
+  color: #49566d;
+}
+
+.image-phone {
+  margin-right: 96px;
+  margin-left: 124px;
+  z-index: 0; /* Ensure the image appears below the text */
+}
+
+.text-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 63px;
+  width: 190px;
+  font-size: 48px;
+  line-height: 56px;
+}
+
+.text-right p {
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.text-right span {
+  font-size: 16px;
+  line-height: 26px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  color: #49566d;
+}
+
+.l {
+  display: flex;
+  flex-direction: column;
+}
+
+.button-top {
+  width: 219px;
+  height: 56px;
+  background: white;
+  color: #172339;
+  border-color: #172339;
+  font-size: 18px;
+  border-radius: 6px;
+}
+
+.button {
+  margin-top: 40px;
+  bottom: 0px;
+  width: 256px;
+  height: 61px;
+  background: #172339;
+  color: #faf8f6;
+  font-size: 18px;
+  border-radius: 6px;
+}
