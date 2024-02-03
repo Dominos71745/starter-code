@@ -13,6 +13,8 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 50px 165px 0px;
+  max-width: 1100px;
+  margin: 0 auto;
 }
 
 .first-section {
@@ -23,6 +25,12 @@ body {
   position: relative;
 }
 
+.path-first-section {
+  position: absolute;
+  top: 50px;
+  margin-left: 289px;
+}
+
 .section-left-text {
   display: flex;
   flex-direction: column;
@@ -31,14 +39,14 @@ body {
 
 .heading-xl {
   position: absolute;
-  width: 650px;
+  width: 660px;
   height: 154px;
-  top: 0; /* Position the text at the top */
+  top: 0;
   margin-top: 103px;
   font-size: 72px;
   line-height: 78px;
   letter-spacing: 1px;
-  z-index: 1; /* Ensure the text appears above other elements */
+  z-index: 1;
 }
 
 .text-body {
@@ -53,7 +61,7 @@ body {
 .image-phone {
   margin-right: 96px;
   margin-left: 124px;
-  z-index: 0; /* Ensure the image appears below the text */
+  z-index: 0;
 }
 
 .text-right {
@@ -79,18 +87,20 @@ body {
   color: #49566d;
 }
 
-.l {
+.text-right-text {
   display: flex;
   flex-direction: column;
 }
 
 .button-top {
-  width: 219px;
+  width: 230px;
   height: 56px;
+  padding: 12px 24px;
   background: white;
   color: #172339;
   border-color: #172339;
-  font-size: 18px;
+  font-size: 16px;
+  font-weight: 700;
   border-radius: 6px;
   cursor: pointer;
 }
@@ -107,13 +117,21 @@ body {
   cursor: pointer;
 }
 
+.second-section-container {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  height: 545px;
+}
+
 .second-section {
   display: flex;
   margin: 199px 165px 0px;
   background-color: #172339;
   border-radius: 15px;
   height: 545px;
-  position: relative;
+  width: 1100px;
+  position: absolute;
 }
 
 .image-jeremy {
@@ -173,4 +191,29 @@ body {
   text-transform: uppercase;
   letter-spacing: 2.5px;
   color: #f3ede7;
+}
+
+.footer-box {
+  height: 464px;
+  background-color: #f3ede7;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 360px 165px 72px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.footer-text {
+  font-size: 15px;
+  line-height: 32px;
+  color: #49566d;
+}
+
+.media-icons {
+  display: flex;
+  gap: 28px;
 }
