@@ -5,71 +5,80 @@
 }
 
 body {
-  background-color: #faf8f6;
+  background-color: #faf8f6 !important;
 }
 
-.navbar {
+nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 50px 165px 0px;
-  max-width: 1100px;
-  margin: 0 auto;
+  margin: 0 auto; /* This centers the navbar horizontally */
+  padding: 50px 165px 0; /* Adjusted padding for top */
 }
 
+/* 
 .first-section {
   display: flex;
   justify-content: center;
   margin-top: 67px;
   padding: 0 165px 0px;
   position: relative;
-}
+} */
 
-.path-first-section {
+/* .path-first-section {
   position: absolute;
   top: 50px;
   margin-left: 289px;
+} */
+
+.path-second-section {
+  position: absolute;
+  top: 161px;
+  margin-left: 517px;
 }
 
-.section-left-text {
+/* .section-left-text {
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
+} */
 
-.heading-xl {
+/* .heading-xl {
   position: absolute;
-  width: 660px;
+  width: 630px;
   height: 154px;
   top: 0;
   margin-top: 103px;
   font-size: 72px;
   line-height: 78px;
-  letter-spacing: 1px;
+  letter-spacing: -1px;
   z-index: 1;
-}
+} */
 
-.text-body {
+/* .text-body {
   margin-top: 190px;
   font-size: 18px;
   line-height: 32px;
+  letter-spacing: 0.1px;
   width: 350px;
   height: 96px;
   color: #49566d;
-}
+} */
 
 .image-phone {
-  margin-right: 96px;
   margin-left: 124px;
   z-index: 0;
+  width: 100%;
+  height: auto;
 }
 
 .text-right {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-left: 124px;
   gap: 63px;
-  width: 190px;
+  width: max-content;
   font-size: 48px;
   line-height: 56px;
 }
@@ -77,6 +86,7 @@ body {
 .text-right p {
   font-weight: 700;
   letter-spacing: 0.5px;
+  margin: 0;
 }
 
 .text-right span {
@@ -96,37 +106,54 @@ body {
   width: 230px;
   height: 56px;
   padding: 12px 24px;
-  background: white;
+  background: #faf8f6;
   color: #172339;
   border-color: #172339;
   font-size: 16px;
   font-weight: 700;
+  letter-spacing: -0.16px;
   border-radius: 6px;
   cursor: pointer;
 }
 
+.button-top:hover {
+  background-color: #172339;
+  color: #faf8f6;
+}
+
 .button {
-  margin-top: 40px;
+  margin-top: 52px;
   bottom: 0px;
   width: 256px;
   height: 61px;
   background: #172339;
   color: #faf8f6;
   font-size: 18px;
+  font-weight: 700;
   border-radius: 6px;
   cursor: pointer;
 }
 
-.second-section-container {
-  display: flex;
-  justify-content: center;
-  position: relative;
-  height: 545px;
+.button:hover {
+  color: FAF8F6;
+  background: linear-gradient(
+    165deg,
+    rgba(160, 96, 255, 1) 0%,
+    rgba(203, 48, 227, 1) 50%,
+    rgba(255, 168, 78, 1) 100%
+  );
+  border-style: none;
 }
 
 .second-section {
   display: flex;
-  margin: 199px 165px 0px;
+  justify-content: center;
+  height: 545px;
+}
+
+.second-section-container {
+  display: flex;
+  margin-top: 199px;
   background-color: #172339;
   border-radius: 15px;
   height: 545px;
@@ -144,7 +171,7 @@ body {
   width: 545px;
   height: 545px;
   margin-top: 80px;
-  margin-left: 10px;
+  margin-left: 20px;
 }
 
 .second-section-text {
@@ -160,13 +187,14 @@ body {
   color: #faf8f6;
   font-size: 48px;
   line-height: 56px;
-  letter-spacing: 0.5px;
+  letter-spacing: -0.5px;
 }
 
 .text-quote {
   color: #f3ede7;
   font-size: 20px;
   line-height: 35px;
+  letter-spacing: 0.1px;
   width: 350px;
   height: 175px;
 }
@@ -181,7 +209,7 @@ body {
   font-size: 18px;
   font-weight: 700;
   line-height: 32px;
-  letter-spacing: 0.2px;
+  letter-spacing: -0.2px;
   text-transform: uppercase;
 }
 
@@ -193,8 +221,7 @@ body {
   color: #f3ede7;
 }
 
-.footer-box {
-  height: 464px;
+footer {
   background-color: #f3ede7;
 }
 
@@ -210,10 +237,41 @@ body {
 .footer-text {
   font-size: 15px;
   line-height: 32px;
+  letter-spacing: 0.08px;
   color: #49566d;
 }
 
 .media-icons {
   display: flex;
   gap: 28px;
+}
+
+.media-icons svg {
+  cursor: pointer;
+}
+
+.media-icons svg:hover {
+  filter: invert(50%);
+}
+
+@media (max-width: 992px) {
+  .image-phone {
+    background-image: url("../assets/");
+    /* Additional styles for mobile */
+  }
+
+  .text-right {
+    display: flex;
+    flex-direction: row;
+    margin-top: 88px;
+    gap: 100px;
+  }
+}
+
+/* Styles for screens 768px and above (tablets and desktop) */
+@media (min-width: 768px) {
+  .image-phone {
+    background-image: url("./assets/tablet-image.png");
+    /* Additional styles for tablet and desktop */
+  }
 }
