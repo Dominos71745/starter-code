@@ -1,10 +1,9 @@
 * {
-  margin: 0;
-  padding: 0;
   font-family: "Epilogue", sans-serif;
 }
 
 body {
+  width: 100%;
   background-color: #faf8f6 !important;
 }
 
@@ -12,8 +11,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 0 auto; /* This centers the navbar horizontally */
-  padding: 50px 165px 0; /* Adjusted padding for top */
+  padding: 50px 0 0; /* Adjusted padding for top */
 }
 
 /* 
@@ -31,11 +29,11 @@ nav {
   margin-left: 289px;
 } */
 
-.path-second-section {
+/* .path-second-section {
   position: absolute;
   top: 161px;
   margin-left: 517px;
-}
+} */
 
 /* .section-left-text {
   display: flex;
@@ -65,18 +63,10 @@ nav {
   color: #49566d;
 } */
 
-.image-phone {
-  margin-left: 124px;
-  z-index: 0;
-  width: 100%;
-  height: auto;
-}
-
 .text-right {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-left: 124px;
   gap: 63px;
   width: max-content;
   font-size: 48px;
@@ -97,10 +87,10 @@ nav {
   color: #49566d;
 }
 
-.text-right-text {
+/* .text-right-text {
   display: flex;
   flex-direction: column;
-}
+} */
 
 .button-top {
   width: 230px;
@@ -108,6 +98,7 @@ nav {
   padding: 12px 24px;
   background: #faf8f6;
   color: #172339;
+  border-width: 1.5px;
   border-color: #172339;
   font-size: 16px;
   font-weight: 700;
@@ -123,13 +114,14 @@ nav {
 
 .button {
   margin-top: 52px;
-  bottom: 0px;
   width: 256px;
   height: 61px;
+  padding: 0;
   background: #172339;
   color: #faf8f6;
   font-size: 18px;
   font-weight: 700;
+  border: none;
   border-radius: 6px;
   cursor: pointer;
 }
@@ -145,13 +137,13 @@ nav {
   border-style: none;
 }
 
-.second-section {
+/* .second-section {
   display: flex;
   justify-content: center;
   height: 545px;
-}
+} */
 
-.second-section-container {
+/* .second-section-container {
   display: flex;
   margin-top: 199px;
   background-color: #172339;
@@ -159,35 +151,36 @@ nav {
   height: 545px;
   width: 1100px;
   position: absolute;
-}
-
+} */
+/* 
 .image-jeremy {
   position: absolute;
   left: 122px;
   bottom: 0;
-}
+} */
 
 .oval-jeremy {
   width: 545px;
   height: 545px;
-  margin-top: 80px;
+  margin-top: 100px;
   margin-left: 20px;
 }
 
-.second-section-text {
+/* .second-section-text {
   display: flex;
   flex-direction: column;
   gap: 40px;
   margin: 88px 125px 88px auto;
   font-size: 48px;
   line-height: 56px;
-}
+} */
 
 .heading-l {
   color: #faf8f6;
   font-size: 48px;
   line-height: 56px;
   letter-spacing: -0.5px;
+  margin: 0;
 }
 
 .text-quote {
@@ -195,17 +188,18 @@ nav {
   font-size: 20px;
   line-height: 35px;
   letter-spacing: 0.1px;
-  width: 350px;
-  height: 175px;
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 
-.text-jeremy {
+/* .text-jeremy {
   display: flex;
   flex-direction: column;
-}
+} */
 
-.text-jeremy p {
+.text-jeremy-p {
   color: #faf8f6;
+  margin: 0;
   font-size: 18px;
   font-weight: 700;
   line-height: 32px;
@@ -213,7 +207,7 @@ nav {
   text-transform: uppercase;
 }
 
-.text-jeremy span {
+.text-jeremy-span {
   font-size: 16px;
   line-height: 26px;
   text-transform: uppercase;
@@ -225,20 +219,21 @@ footer {
   background-color: #f3ede7;
 }
 
-.footer {
+/* .footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 360px 165px 72px;
   max-width: 1100px;
   margin: 0 auto;
-}
+} */
 
 .footer-text {
   font-size: 15px;
   line-height: 32px;
   letter-spacing: 0.08px;
   color: #49566d;
+  margin: 0;
 }
 
 .media-icons {
@@ -246,32 +241,57 @@ footer {
   gap: 28px;
 }
 
-.media-icons svg {
+svg {
   cursor: pointer;
 }
 
-.media-icons svg:hover {
+svg:hover {
   filter: invert(50%);
 }
 
-@media (max-width: 992px) {
-  .image-phone {
-    background-image: url("../assets/");
-    /* Additional styles for mobile */
-  }
-
+@media (max-width: 1199px) {
   .text-right {
     display: flex;
     flex-direction: row;
     margin-top: 88px;
-    gap: 100px;
+    margin-left: 0px;
+    gap: 150px;
+  }
+
+  /* style="width: 630px; line-height: 78px; letter-spacing: -1px" */
+
+  .img-fluid-lg {
+    max-height: 600px;
+    height: auto;
+  }
+}
+
+@media (max-width: 992px) {
+  .img-fluid-lg {
+    max-height: 482px;
+    height: auto;
+  }
+}
+
+@media (min-width: 992px) {
+  .img-fluid-lg {
+    max-height: 600px;
+    height: auto;
   }
 }
 
 /* Styles for screens 768px and above (tablets and desktop) */
-@media (min-width: 768px) {
+@media (max-width: 768px) {
   .image-phone {
     background-image: url("./assets/tablet-image.png");
     /* Additional styles for tablet and desktop */
+  }
+
+  .text-right {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 56px;
+    gap: 30px;
   }
 }

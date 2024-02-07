@@ -1,20 +1,50 @@
 $spacer: 1rem !default;
 $spacers: (
+  -210: -$spacer * 13.125,
+  -265: -$spacer * 16.563,
+  -464: -$spacer * 29,
   0: 0,
   1: $spacer * 0.25,
   2: $spacer * 0.5,
-  3: $spacer,
+  3: $spacer * 1,
   4: $spacer * 1.5,
   5: $spacer * 3,
+  27: $spacer * 1.688,
+  36: $spacer * 2.25,
   40: $spacer * 2.5,
+  42: $spacer * 2.625,
   50: $spacer * 3.125,
+  52: $spacer * 3.25,
+  56: $spacer * 3.5,
+  55: $spacer * 3.438,
+  58: $spacer * 3.625,
+  64: $spacer * 4,
   67: $spacer * 4.188,
+  72: $spacer * 4.5,
+  80: $spacer * 5,
+  88: $spacer * 5.5,
+  92: $spacer * 5.75,
   96: $spacer * 6,
   103: $spacer * 6.438,
+  122: $spacer * 7.625,
+  124: $spacer * 7.75,
+  125: $spacer * 7.813,
+  148: $spacer * 9.25,
+  154: $spacer * 9.625,
+  161: $spacer * 10.063,
+  163: $spacer * 10.188,
   165: $spacer * 10.313,
   180: $spacer * 11.25,
   190: $spacer * 11.875,
+  199: $spacer * 12.438,
+  223: $spacer * 13.938,
+  257: $spacer * 16.063,
   289: $spacer * 18.063,
+  300: $spacer * 18.75,
+  360: $spacer * 22.5,
+  489: $spacer * 30.563,
+  517: $spacer * 32.313,
+  634: $spacer * 39.625
 ) !default;
 
 $position-values: (
@@ -25,7 +55,7 @@ $position-values: (
 $font-size-base: 1rem;
 
 $h1-font-size: $font-size-base * 4.5;
-$h2-font-size: $font-size-base * 2;
+$h2-font-size: $font-size-base * 3;
 $h3-font-size: $font-size-base * 1.75;
 $h4-font-size: $font-size-base * 1.5;
 $h5-font-size: $font-size-base * 1.125;
