@@ -9,7 +9,10 @@ $spacers: (
   3: $spacer * 1,
   4: $spacer * 1.5,
   5: $spacer * 3,
-  27: $spacer * 1.688,
+  15: $spacer * 0.938,
+  24: $spacer * 1.5,
+  32: $spacer * 2,
+  33: $spacer * 2.063,
   36: $spacer * 2.25,
   40: $spacer * 2.5,
   42: $spacer * 2.625,
@@ -29,6 +32,8 @@ $spacers: (
   122: $spacer * 7.625,
   124: $spacer * 7.75,
   125: $spacer * 7.813,
+  131: $spacer * 8.188,
+  146: $spacer * 9.125,
   148: $spacer * 9.25,
   154: $spacer * 9.625,
   161: $spacer * 10.063,
@@ -41,6 +46,7 @@ $spacers: (
   257: $spacer * 16.063,
   289: $spacer * 18.063,
   300: $spacer * 18.75,
+  331: $spacer * 20.688,
   360: $spacer * 22.5,
   489: $spacer * 30.563,
   517: $spacer * 32.313,
@@ -50,15 +56,22 @@ $spacers: (
 $position-values: (
   0: 0,
   50: $spacer * 3.125,
+  124: $spacer * 7.75,
+  517: $spacer * 32.313,
 );
 
 $font-size-base: 1rem;
 
 $h1-font-size: $font-size-base * 4.5;
 $h2-font-size: $font-size-base * 3;
-$h3-font-size: $font-size-base * 1.75;
-$h4-font-size: $font-size-base * 1.5;
-$h5-font-size: $font-size-base * 1.125;
 $h6-font-size: $font-size-base;
+
+$dark-blue: #172339;
+$cream: #f3ede7;
+
+$theme-colors: (
+  "dark-blue": $dark-blue,
+  "cream": $cream,
+);
 
 @import "../node_modules/bootstrap/scss/bootstrap.scss";

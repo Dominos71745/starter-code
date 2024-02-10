@@ -7,61 +7,12 @@ body {
   background-color: #faf8f6 !important;
 }
 
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 50px 0 0; /* Adjusted padding for top */
-}
-
-/* 
-.first-section {
-  display: flex;
-  justify-content: center;
-  margin-top: 67px;
-  padding: 0 165px 0px;
-  position: relative;
-} */
-
-/* .path-first-section {
-  position: absolute;
-  top: 50px;
-  margin-left: 289px;
-} */
-
-/* .path-second-section {
-  position: absolute;
-  top: 161px;
-  margin-left: 517px;
-} */
-
-/* .section-left-text {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-} */
-
-/* .heading-xl {
-  position: absolute;
-  width: 630px;
-  height: 154px;
-  top: 0;
-  margin-top: 103px;
-  font-size: 72px;
-  line-height: 78px;
-  letter-spacing: -1px;
-  z-index: 1;
-} */
-
-/* .text-body {
-  margin-top: 190px;
+.section-first-p {
   font-size: 18px;
   line-height: 32px;
   letter-spacing: 0.1px;
-  width: 350px;
-  height: 96px;
   color: #49566d;
-} */
+}
 
 .text-right {
   display: flex;
@@ -87,15 +38,7 @@ nav {
   color: #49566d;
 }
 
-/* .text-right-text {
-  display: flex;
-  flex-direction: column;
-} */
-
 .button-top {
-  width: 230px;
-  height: 56px;
-  padding: 12px 24px;
   background: #faf8f6;
   color: #172339;
   border-width: 1.5px;
@@ -113,13 +56,11 @@ nav {
 }
 
 .button {
-  margin-top: 52px;
-  width: 256px;
-  height: 61px;
-  padding: 0;
   background: #172339;
   color: #faf8f6;
   font-size: 18px;
+  line-height: 32px;
+  letter-spacing: -0.16px;
   font-weight: 700;
   border: none;
   border-radius: 6px;
@@ -137,44 +78,6 @@ nav {
   border-style: none;
 }
 
-/* .second-section {
-  display: flex;
-  justify-content: center;
-  height: 545px;
-} */
-
-/* .second-section-container {
-  display: flex;
-  margin-top: 199px;
-  background-color: #172339;
-  border-radius: 15px;
-  height: 545px;
-  width: 1100px;
-  position: absolute;
-} */
-/* 
-.image-jeremy {
-  position: absolute;
-  left: 122px;
-  bottom: 0;
-} */
-
-.oval-jeremy {
-  width: 545px;
-  height: 545px;
-  margin-top: 100px;
-  margin-left: 20px;
-}
-
-/* .second-section-text {
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
-  margin: 88px 125px 88px auto;
-  font-size: 48px;
-  line-height: 56px;
-} */
-
 .heading-l {
   color: #faf8f6;
   font-size: 48px;
@@ -188,14 +91,7 @@ nav {
   font-size: 20px;
   line-height: 35px;
   letter-spacing: 0.1px;
-  margin-top: 40px;
-  margin-bottom: 40px;
 }
-
-/* .text-jeremy {
-  display: flex;
-  flex-direction: column;
-} */
 
 .text-jeremy-p {
   color: #faf8f6;
@@ -215,19 +111,6 @@ nav {
   color: #f3ede7;
 }
 
-footer {
-  background-color: #f3ede7;
-}
-
-/* .footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 360px 165px 72px;
-  max-width: 1100px;
-  margin: 0 auto;
-} */
-
 .footer-text {
   font-size: 15px;
   line-height: 32px;
@@ -236,16 +119,11 @@ footer {
   margin: 0;
 }
 
-.media-icons {
-  display: flex;
-  gap: 28px;
-}
-
-svg {
+.media-icons svg {
   cursor: pointer;
 }
 
-svg:hover {
+.media-icons svg:hover {
   filter: invert(50%);
 }
 
@@ -257,8 +135,6 @@ svg:hover {
     margin-left: 0px;
     gap: 150px;
   }
-
-  /* style="width: 630px; line-height: 78px; letter-spacing: -1px" */
 
   .img-fluid-lg {
     max-height: 600px;
@@ -279,12 +155,9 @@ svg:hover {
     height: auto;
   }
 }
-
-/* Styles for screens 768px and above (tablets and desktop) */
 @media (max-width: 768px) {
   .image-phone {
     background-image: url("./assets/tablet-image.png");
-    /* Additional styles for tablet and desktop */
   }
 
   .text-right {
@@ -293,5 +166,38 @@ svg:hover {
     text-align: center;
     margin-top: 56px;
     gap: 30px;
+  }
+
+  .section-first-p {
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 0.1px;
+  }
+
+  .heading-l {
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: -0.42px;
+  }
+
+  .text-quote {
+    font-size: 18px;
+    line-height: 32px;
+    letter-spacing: 0.1px;
+  }
+
+  .hide-svg {
+    width: 197px;
+    height: 197px;
+  }
+}
+
+@media (max-width: 576px) {
+  .button-top {
+    width: 182px;
+    height: 48px;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: -0.14px;
   }
 }
